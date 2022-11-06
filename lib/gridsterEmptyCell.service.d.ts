@@ -1,0 +1,31 @@
+import { GridsterComponentInterface } from './gridster.interface';
+import { GridsterItem } from './gridsterItem.interface';
+export declare class GridsterEmptyCell {
+    private gridster;
+    initialItem: GridsterItem | null;
+    removeEmptyCellClickListenerFn: (() => void) | null;
+    removeEmptyCellTouchendListenerFn: (() => void) | null;
+    removeEmptyCellContextMenuListenerFn: (() => void) | null;
+    removeEmptyCellDropListenerFn: (() => void) | null;
+    removeEmptyCellMousedownListenerFn: (() => void) | null;
+    removeEmptyCellTouchstartListenerFn: (() => void) | null;
+    removeWindowMousemoveListenerFn: () => void;
+    removeWindowTouchmoveListenerFn: () => void;
+    removeWindowMouseupListenerFn: () => void;
+    removeWindowTouchendListenerFn: () => void;
+    removeEmptyCellDragoverListenerFn: (() => void) | null;
+    removeDocumentDragendListenerFn: (() => void) | null;
+    constructor(gridster: GridsterComponentInterface);
+    destroy(): void;
+    updateOptions(): void;
+    emptyCellClickCb: (e: MouseEvent) => void;
+    emptyCellContextMenuCb: (e: MouseEvent) => void;
+    emptyCellDragDrop: (e: DragEvent) => void;
+    emptyCellDragOver: (e: DragEvent) => void;
+    emptyCellMouseDown: (e: MouseEvent) => void;
+    emptyCellMouseMove: (e: MouseEvent) => void;
+    emptyCellMouseUp: (e: MouseEvent) => void;
+    getPixelsX(e: MouseEvent, rect: ClientRect): number;
+    getPixelsY(e: MouseEvent, rect: ClientRect): number;
+    getValidItemFromEvent(e: MouseEvent, oldItem?: GridsterItem | null): GridsterItem | undefined;
+}
