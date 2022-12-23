@@ -74,5 +74,5 @@ export declare class GridsterComponent implements OnInit, OnChanges, OnDestroy, 
     previewStyle(drag?: boolean): void;
     private static getNewArrayLength;
     static ɵfac: i0.ɵɵFactoryDeclaration<GridsterComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<GridsterComponent, "gridster", never, { "options": "options"; }, {}, never, ["*"], false>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<GridsterComponent, "gridster", never, { "options": "options"; }, {}, never, ["*"], true, never>;
 }

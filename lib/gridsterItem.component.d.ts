@@ -1,8 +1,8 @@
-import { ElementRef, NgZone, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges, EventEmitter } from '@angular/core';
-import { GridsterDraggable } from './gridsterDraggable.service';
-import { GridsterResizable } from './gridsterResizable.service';
-import { GridsterItem, GridsterItemComponentInterface } from './gridsterItem.interface';
+import { ElementRef, EventEmitter, NgZone, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges } from '@angular/core';
 import { GridsterComponent } from './gridster.component';
+import { GridsterDraggable } from './gridsterDraggable.service';
+import { GridsterItem, GridsterItemComponentInterface } from './gridsterItem.interface';
+import { GridsterResizable } from './gridsterResizable.service';
 import * as i0 from "@angular/core";
 export declare class GridsterItemComponent implements OnInit, OnDestroy, OnChanges, GridsterItemComponentInterface {
     renderer: Renderer2;
@@ -57,5 +57,5 @@ export declare class GridsterItemComponent implements OnInit, OnDestroy, OnChang
     sendToBack(offset: number): void;
     private getLayerIndex;
     static ɵfac: i0.ɵɵFactoryDeclaration<GridsterItemComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<GridsterItemComponent, "gridster-item", never, { "item": "item"; }, { "itemInit": "itemInit"; "itemChange": "itemChange"; "itemResize": "itemResize"; }, never, ["*"], false>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<GridsterItemComponent, "gridster-item", never, { "item": "item"; }, { "itemInit": "itemInit"; "itemChange": "itemChange"; "itemResize": "itemResize"; }, never, ["*"], true, never>;
 }
